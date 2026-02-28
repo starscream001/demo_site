@@ -1,297 +1,251 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Гирудотерапия во Всеволожске — запись к врачу</title>
-  <meta name="description" content="Гирудотерапия во Всеволожске: запись к врачу Вычужаниной Светлане Григорьевне. Аккуратный подход, прием по записи, современные условия." />
-  <meta property="og:title" content="Гирудотерапия — запись к врачу" />
-  <meta property="og:description" content="Гирудотерапия как вспомогательный метод. Прием по записи во Всеволожске." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-image.svg" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>квартиры Лиля и Андрей — 30-дневная система роста</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b1220;--card:#131d33;--muted:#94a3b8;--text:#f1f5f9;--acc:#38bdf8;--ok:#22c55e;--warn:#f59e0b;--line:#1e293b}
+    *{box-sizing:border-box} html,body{margin:0;font-family:Inter,system-ui,sans-serif;background:linear-gradient(180deg,#020617,#0b1220);color:var(--text);scroll-behavior:smooth}
+    a{color:var(--acc);text-decoration:none}
+    .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,#22d3ee,#38bdf8);width:0;z-index:9999}
+    header{position:sticky;top:0;z-index:999;background:rgba(2,6,23,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1200px;margin:auto;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .brand{font-weight:800;margin-right:auto}
+    .nav a{padding:8px 10px;border-radius:10px;background:#0f172a}
+    .container{max-width:1200px;margin:0 auto;padding:24px 16px 90px}
+    section{padding:22px 0;border-bottom:1px solid var(--line)}
+    h1{font-size:clamp(30px,5vw,48px);margin:.2em 0} h2{font-size:clamp(22px,3vw,32px)} h3{margin:8px 0}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .card{background:var(--card);border:1px solid #263348;border-radius:16px;padding:16px}
+    .kpi{grid-column:span 3}.kpi b{font-size:26px;display:block}
+    .btn{background:var(--acc);color:#00222d;border:0;border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+    .btn.alt{background:#1e293b;color:var(--text);border:1px solid #334155}
+    .copyable{white-space:pre-wrap;background:#0f172a;border:1px solid #334155;border-radius:12px;padding:12px;font-size:14px}
+    .table-wrap{overflow:auto;border:1px solid #334155;border-radius:12px}
+    table{width:100%;border-collapse:collapse;min-width:760px;background:#0f172a}
+    th,td{padding:10px;border-bottom:1px solid #1f2937;text-align:left;vertical-align:top}
+    details{background:#0f172a;border:1px solid #334155;border-radius:12px;padding:10px 12px;margin:8px 0}
+    summary{cursor:pointer;font-weight:700}
+    .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .plan{border:1px solid #334155;border-radius:16px;padding:16px;background:linear-gradient(180deg,#111827,#0b1220)}
+    .plan .price{font-size:30px;font-weight:800}
+    .sticky-top{position:fixed;right:16px;bottom:16px;display:none}
+    input,select,textarea{width:100%;background:#0b1324;border:1px solid #334155;color:#e2e8f0;border-radius:10px;padding:10px}
+    .form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+    .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#0f172a;border:1px solid #334155;font-size:12px;margin-right:6px}
+    @media (max-width:900px){.kpi{grid-column:span 6}}
+    @media (max-width:600px){.kpi{grid-column:span 12}.nav a{font-size:13px;padding:6px 8px}}
+  </style>
 </head>
 <body>
-  <div class="page">
-    <header class="header" id="top">
-      <div class="container header__inner">
-        <a class="logo" href="#top" aria-label="Гирудотерапия — на главную">
-          <span class="logo__mark"></span>
-          <span class="logo__text">Гирудотерапия</span>
-        </a>
-        <nav class="nav" aria-label="Основная навигация">
-          <button class="nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-          <ul class="nav__list">
-            <li><a href="#about">О враче</a></li>
-            <li><a href="#method">О методе</a></li>
-            <li><a href="#benefits">Преимущества</a></li>
-            <li><a href="#indications">Показания</a></li>
-            <li><a href="#contra">Противопоказания</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </nav>
-        <a class="button button--primary header__cta" href="#form">Записаться</a>
-      </div>
-    </header>
+<div class="progress" id="progress"></div>
+<header>
+  <nav class="nav">
+    <div class="brand">квартиры Лиля и Андрей</div>
+    <a href="#plan">30 дней</a><a href="#offers">Акции</a><a href="#vk">VK</a><a href="#team">Команда</a><a href="#calc">Калькулятор</a><a href="#finance">Финмодель</a><a href="#ai">50 AI</a><a href="#sale">Тарифы</a>
+  </nav>
+</header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="container hero__grid">
-          <div class="hero__content">
-            <p class="eyebrow">Медицинская услуга во Всеволожске</p>
-            <h1 id="hero-title">Гирудотерапия</h1>
-            <p class="hero__lead">Аккуратный подход, индивидуальная консультация, запись на прием к врачу Вычужаниной Светлане Григорьевне. Метод применяется как вспомогательный — по показаниям и после обсуждения с врачом.</p>
-            <div class="hero__actions">
-              <a class="button button--primary" href="#form">Записаться</a>
-              <a class="button button--ghost" href="tel:+79214468529">Позвонить</a>
-            </div>
-            <p class="hero__note">Дисклеймер: информация на сайте не является медицинской рекомендацией.</p>
-          </div>
-          <div class="hero__card">
-            <h2 class="hero__card-title">Быстрые контакты</h2>
-            <div class="contact-list">
-              <a class="contact-item" href="tel:+79214468529">
-                <span>8-921-446-85-29</span>
-                <small>Позвонить</small>
-              </a>
-            </div>
-            <div class="contact-actions">
-              <a class="button button--primary" href="tel:+79214468529">Позвонить</a>
-              <a class="button button--ghost" href="https://t.me/Svetlana_girudo" target="_blank" rel="noreferrer">Telegram</a>
-              <a class="button button--ghost" href="https://max.ru/u/f9LHodD0cOKQmqWuDVsZ1qQU-7_uMiA3UaAFwgQY5vtv7Vs6OsxC14AEFMc" target="_blank" rel="noreferrer">Мессенджер Max</a>
-            </div>
-            <div class="hero__details">
-              <p><strong>Адрес:</strong> Всеволожск, Колтушское шоссе 44\1</p>
-              <p><strong>Время приема:</strong> вторник, среда, пятница, суббота — с 12:00 до 20:00</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="container section__grid">
-          <div>
-            <h2 id="about-title">О враче</h2>
-            <p>Вычужанина Светлана Григорьевна ведет прием по записи. По отзывам клиентов, Светлана Григорьевна много лет принимала во Всеволожске (КМБ). Подход — бережный, с вниманием к самочувствию и показаниям.</p>
-            <p class="muted">Если у вас есть дипломы, сертификаты или подтвержденные данные об образовании и стаже — пожалуйста, предоставьте их для обновления информации на сайте. Можно уточнить и дополнить.</p>
-          </div>
-          <div class="info-card">
-            <h3>Нужна консультация врача</h3>
-            <p>Перед началом курса важно обсудить состояние здоровья и возможные ограничения. Метод используется как вспомогательный и не заменяет основное лечение.</p>
-            <a class="button button--primary" href="#form">Записаться на консультацию</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--light" id="method" aria-labelledby="method-title">
-        <div class="container">
-          <h2 id="method-title">Что такое гирудотерапия</h2>
-          <div class="cards">
-            <article class="card">
-              <h3>Простыми словами</h3>
-              <p>Гирудотерапия — это медицинский метод, в котором используются медицинские пиявки. Процедура может применяться как вспомогательная и проводится по показаниям.</p>
-            </article>
-            <article class="card">
-              <h3>Как проходит сеанс</h3>
-              <ol class="steps">
-                <li>Краткая беседа и сбор информации о самочувствии.</li>
-                <li>Подбор зоны постановки и количества пиявок.</li>
-                <li>Наблюдение во время процедуры и рекомендации после.</li>
-              </ol>
-            </article>
-            <article class="card">
-              <h3>Важное условие</h3>
-              <p>Сеансы проводятся только при отсутствии противопоказаний и после обсуждения с врачом. Это помогает подобрать безопасный и комфортный формат.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="benefits" aria-labelledby="benefits-title">
-        <div class="container">
-          <h2 id="benefits-title">Преимущества (как вспомогательный метод)</h2>
-          <ul class="list-grid">
-            <li>Поддержка микроциркуляции и лимфотока.</li>
-            <li>Мягкий противоотечный эффект.</li>
-            <li>Снижение ощущения тяжести в ногах.</li>
-            <li>Поддержка восстановления после нагрузок.</li>
-            <li>Может помочь улучшить самочувствие при хронической усталости.</li>
-            <li>Аккуратное воздействие на сосудистое русло.</li>
-            <li>Комплексный подход с рекомендациями по образу жизни.</li>
-            <li>Индивидуальный подбор количества и зоны постановки.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section section--light" id="indications" aria-labelledby="indications-title">
-        <div class="container">
-          <div class="section__grid">
-            <div>
-              <h2 id="indications-title">Показания (примерно)</h2>
-              <p class="muted">Метод применяется как вспомогательный и обсуждается индивидуально. Ниже — распространенные направления, где его могут использовать.</p>
-              <ul class="list">
-                <li>Сосудистые и венозные особенности (по показаниям).</li>
-                <li>Отечность и ощущение тяжести в ногах.</li>
-                <li>Поддержка восстановления после травм и операций.</li>
-                <li>Гинекологические запросы (только по назначению врача).</li>
-                <li>Неврологические состояния — как вспомогательный метод.</li>
-                <li>Косметологические запросы — по согласованию.</li>
-              </ul>
-            </div>
-            <div class="info-card">
-              <h3>Уточнить показания</h3>
-              <p>Опишите ваш запрос, и мы расскажем, подходит ли метод в вашем случае или нужно другое решение.</p>
-              <a class="button button--primary" href="#form">Уточнить показания</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contra" aria-labelledby="contra-title">
-        <div class="container">
-          <h2 id="contra-title">Противопоказания и ограничения</h2>
-          <div class="cards">
-            <article class="card card--warning">
-              <p>Гемофилия и нарушения свертывания крови.</p>
-            </article>
-            <article class="card card--warning">
-              <p>Выраженная анемия.</p>
-            </article>
-            <article class="card card--warning">
-              <p>Беременность — обсуждается с врачом.</p>
-            </article>
-            <article class="card card--warning">
-              <p>Аллергические реакции и индивидуальная непереносимость.</p>
-            </article>
-            <article class="card card--warning">
-              <p>Онкологические заболевания и острые состояния — обсуждается с врачом.</p>
-            </article>
-            <article class="card card--warning">
-              <p>Любые сомнения требуют консультации специалиста.</p>
-            </article>
-          </div>
-          <p class="section__note">Нужна консультация врача — это обязательный шаг перед началом курса.</p>
-        </div>
-      </section>
-
-      <section class="section section--light" id="steps" aria-labelledby="steps-title">
-        <div class="container">
-          <h2 id="steps-title">Как записаться</h2>
-          <div class="steps-grid">
-            <div class="step-card">
-              <span class="step-number">1</span>
-              <p>Оставьте заявку или позвоните по телефону.</p>
-            </div>
-            <div class="step-card">
-              <span class="step-number">2</span>
-              <p>Мы уточним запрос и подберем удобное время.</p>
-            </div>
-            <div class="step-card">
-              <span class="step-number">3</span>
-              <p>Приходите на прием и получите рекомендации.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="form" aria-labelledby="form-title">
-        <div class="container section__grid">
-          <div>
-            <h2 id="form-title">Форма записи</h2>
-            <p class="muted">Заполните форму — мы свяжемся для подтверждения записи. Поля обязательны для ответа.</p>
-            <form class="form" id="appointment-form" novalidate>
-              <label>
-                <span>Имя</span>
-                <input type="text" name="name" placeholder="Ваше имя" required />
-              </label>
-              <label>
-                <span>Телефон</span>
-                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required />
-              </label>
-              <label>
-                <span>Удобное время/день</span>
-                <input type="text" name="time" placeholder="Например: среда 15:00" required />
-              </label>
-              <label>
-                <span>Комментарий</span>
-                <textarea name="comment" rows="4" placeholder="Кратко опишите запрос (можно уточнить/добавить)"></textarea>
-              </label>
-              <button class="button button--primary" type="submit">Отправить заявку</button>
-              <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных для связи.</p>
-              <div class="form__status" role="status" aria-live="polite"></div>
-            </form>
-          </div>
-          <div class="info-card info-card--accent">
-            <h3>Связаться напрямую</h3>
-            <p>Если удобнее — звоните напрямую. Быстро ответим и подберем время.</p>
-            <div class="contact-list">
-              <a class="contact-item" href="tel:+79214468529">
-                <span>8-921-446-85-29</span>
-                <small>Позвонить</small>
-              </a>
-            </div>
-            <div class="contact-actions">
-              <a class="button button--primary" href="tel:+79214468529">Позвонить</a>
-              <a class="button button--ghost" href="https://t.me/Svetlana_girudo" target="_blank" rel="noreferrer">Telegram</a>
-              <a class="button button--ghost" href="https://max.ru/u/f9LHodD0cOKQmqWuDVsZ1qQU-7_uMiA3UaAFwgQY5vtv7Vs6OsxC14AEFMc" target="_blank" rel="noreferrer">Мессенджер Max</a>
-            </div>
-            <p class="muted">Если нужны изменения в расписании — можно уточнить при звонке.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--light" id="contact" aria-labelledby="contact-title">
-        <div class="container section__grid">
-          <div>
-            <h2 id="contact-title">Где принимаю</h2>
-            <p><strong>Адрес:</strong> Всеволожск, Колтушское шоссе 44\1</p>
-            <p><strong>График:</strong> вторник, среда, пятница, суббота — с 12:00 до 20:00</p>
-            <p class="muted">При необходимости можно уточнить точный кабинет и ориентиры при записи.</p>
-            <a class="button button--primary" href="https://yandex.ru/maps/?text=Всеволожск%2C%20Колтушское%20шоссе%2044%5C1" target="_blank" rel="noreferrer">Открыть в картах</a>
-          </div>
-          <div class="map">
-            <iframe title="Карта — Всеволожск, Колтушское шоссе 44\1" src="https://yandex.ru/map-widget/v1/?text=Всеволожск%2C%20Колтушское%20шоссе%2044%5C1&z=16" loading="lazy"></iframe>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer__grid">
-        <div>
-          <p class="footer__title">Гирудотерапия</p>
-          <p>Врач: Вычужанина Светлана Григорьевна</p>
-          <p>Адрес: Всеволожск, Колтушское шоссе 44\1</p>
-        </div>
-        <div>
-          <p class="footer__title">Контакты</p>
-          <a href="tel:+79214468529">8-921-446-85-29</a>
-        </div>
-        <div>
-          <p class="footer__title">График</p>
-          <p>вторник, среда, пятница, суббота — с 12:00 до 20:00</p>
-        </div>
-      </div>
-      <div class="container footer__note">
-        <p>Дисклеймер: информация на сайте не является медицинской рекомендацией. Требуется консультация врача.</p>
-      </div>
-    </footer>
-
-    <button class="to-top" type="button" aria-label="Наверх">↑</button>
-
-    <div class="mobile-bar" role="navigation" aria-label="Быстрые действия">
-      <a class="mobile-bar__button" href="tel:+79214468529">Позвонить</a>
-      <a class="mobile-bar__button mobile-bar__button--primary" href="https://t.me/Svetlana_girudo" target="_blank" rel="noreferrer">Telegram</a>
-      <a class="mobile-bar__button" href="https://max.ru/u/f9LHodD0cOKQmqWuDVsZ1qQU-7_uMiA3UaAFwgQY5vtv7Vs6OsxC14AEFMc" target="_blank" rel="noreferrer">Мессенджер Max</a>
+<main class="container">
+  <section id="hero">
+    <h1>30-дневная система роста для посуточной аренды в Санкт-Петербурге</h1>
+    <p class="muted">Ниша: аренда жилья. ЦА: гости города на 2–7 дней по делам и отдыху. Основной продукт: сдача квартир посуточно. Средний чек: <b>2 500 ₽/сутки</b>. Каналы: Авито, Циан.</p>
+    <div class="grid">
+      <div class="card kpi"><span class="muted">Цель 30 дней</span><b>+18%</b> выручки</div>
+      <div class="card kpi"><span class="muted">Цель по загрузке</span><b>78%</b> занятость</div>
+      <div class="card kpi"><span class="muted">Допродажи</span><b>15%</b> к выручке</div>
+      <div class="card kpi"><span class="muted">Повторы/рефералы</span><b>22%</b> бронирований</div>
     </div>
-  </div>
+  </section>
 
-  <script src="script.js"></script>
+  <section id="plan">
+    <h2>Календарь внедрения (недели)</h2>
+    <details open><summary>Неделя 1 — упаковка и цена</summary><ul><li>Обновить карточки Авито/Циан: 20 фото, планировка, карта метро, правила заселения.</li><li>Ввести 3 тарифа по длительности: 1–2 суток, 3–6, 7+.</li><li>Добавить 4 допродажи: ранний заезд, поздний выезд, трансфер, набор «Комфорт».</li><li>KPI: +8% к конверсии в сообщение.</li></ul></details>
+    <details><summary>Неделя 2 — скрипты и отзывы</summary><ul><li>Запуск скрипта ответа &lt; 7 минут.</li><li>Сбор отзыва в день выезда + шаблон ответа.</li><li>Тест 2 офферов: «для командировок» и «для парных поездок».</li><li>KPI: рейтинг карточек 4.8+, доля отзывов +25%.</li></ul></details>
+    <details><summary>Неделя 3 — трафик и ретаргет</summary><ul><li>12 постов VK + 20 сторис на месяц.</li><li>Реферальная механика: 500 ₽ бонус на следующее заселение.</li><li>Подборка «жилье рядом с деловыми точками СПб».</li><li>KPI: +20 входящих лидов.</li></ul></details>
+    <details><summary>Неделя 4 — масштаб и контроль</summary><ul><li>Внедрить чек-лист смены и антинакрутки.</li><li>Ежедневный KPI-трекер + разбор отклонений.</li><li>Пакетирование предложения и запуск тарифа Team.</li><li>KPI: опер. прибыль +12%.</li></ul></details>
+  </section>
+
+  <section id="offers">
+    <h2>4 акции с готовыми материалами</h2>
+    <div class="grid">
+      <article class="card" style="grid-column:span 6"><h3>1) Комбо-пакет «Комфорт + мобильность»</h3><p>Внедрение: добавить опцию при брони 690 ₽ (ранний заезд + набор гигиены + 2 капсулы кофе + карта района).</p><div class="copyable" id="vk1">VK пост (980 символов):
+Санкт-Петербург любит тех, кто планирует поездку без стресса. Поэтому в «квартиры Лиля и Андрей» добавили пакет «Комфорт + мобильность» для гостей на 1–5 дней: ранний заезд, набор первой необходимости и готовая карта локаций рядом (где поесть, где купить, как быстрее добраться до центра). Если прилетаете утром или хотите сразу включиться в дела — это лучший вариант. Особенно удобно для командировок: без лишних переписок и ожиданий. Стоимость пакета фиксированная 690 ₽ к брони, подключается в сообщении на Авито/Циан. Мы на связи ежедневно, заселение по инструкции, поддержка по району и транспорту. Для брони напишите дату заезда/выезда и количество гостей — ответим быстро.
+Сторис 1: «Прилет рано? Заселим раньше при наличии окна»
+Сторис 2: «Набор Комфорт уже в квартире»
+Сторис 3: «Пакет 690 ₽ — экономит время в день прилета»
+Тейбл-тент: «Добавьте пакет “Комфорт + мобильность” — 690 ₽»
+Скрипт: «Если приезжаете утром, рекомендую пакет 690 ₽: ранний заезд + всё базовое в квартире, чтобы не тратить время на магазины»
+KPI: attach rate пакета ≥ 18%, допвыручка ≥ 12 000 ₽/мес.</div><button class="btn alt" data-copy-target="#vk1">Скопировать</button></article>
+      <article class="card" style="grid-column:span 6"><h3>2) Приведи друга</h3><p>Внедрение: после выезда отправлять ссылку-код; другу скидка 300 ₽, рекомендателю бонус 500 ₽ на следующее проживание.</p><p>KPI: 10 рефералов/мес, CAC ниже платного трафика на 25%.</p></article>
+      <article class="card" style="grid-column:span 6"><h3>3) Лояльность «5-я бронь с бонусом»</h3><p>Внедрение: вести учет в CRM-таблице. На 5-й брони — поздний выезд или клининг в подарок.</p><p>KPI: доля повторов 22%+, LTV +15%.</p></article>
+      <article class="card" style="grid-column:span 6"><h3>4) Услуга недели</h3><p>Внедрение: каждую неделю одна допуслуга с ограничением по времени (например, трансфер от аэропорта по спеццене).</p><p>KPI: конверсия в допродажу +4 п.п., выручка/гостя +9%.</p></article>
+    </div>
+  </section>
+
+  <section id="vk">
+    <h2>VK PRO: 12 постов + 20 сторис</h2>
+    <details><summary>12 готовых постов</summary><ol><li>«Квартира для короткой командировки в СПб: что важно проверить до брони»</li><li>«3 маршрута выходного дня из Московского вокзала»</li><li>«Где жить, если прилетаете ночью в Санкт-Петербург»</li><li>«Чек-лист заселения без встреч»</li><li>«Как сэкономить время в деловой поездке»</li><li>«Подборка кафе рядом с объектом»</li><li>«Топ ошибок при бронировании на 2–3 дня»</li><li>«Наш стандарт чистоты: что входит»</li><li>«Ранний заезд/поздний выезд: как работает»</li><li>«Пост для пар: уютный уикенд в СПб»</li><li>«Пост для соло-гостя: безопасность и логистика»</li><li>«Реферальный бонус для постоянных гостей»</li></ol></details>
+    <details><summary>20 сторис-сценариев</summary><p>1-5: путь гостя от сообщения до заселения; 6-10: ответы на частые вопросы; 11-15: локальные рекомендации по Санкт-Петербургу; 16-20: кейсы гостей, отзывы и допродажи.</p></details>
+  </section>
+
+  <section id="reviews">
+    <h2>Отзывы: регламент + 30 шаблонов</h2>
+    <p>Регламент: запрос отзыва через 2 часа после выезда, повтор через 24 часа, ответ в течение 12 часов.</p>
+    <details><summary>30 шаблонов ответов (раскрыть)</summary><div class="copyable" id="reviewsText">1) Спасибо за высокую оценку, рады, что поездка в Санкт-Петербург прошла комфортно.
+2) Благодарим за отзыв, будем ждать снова.
+3) Спасибо, что отметили чистоту и удобное заселение.
+4) Рады, что локация подошла под ваши задачи.
+5) Спасибо, всегда держим связь до позднего вечера.
+6) Благодарим за доверие и аккуратное проживание.
+7) Отлично, что ранний заезд помог вам по графику.
+8) Спасибо, что выбрали нас для поездки в СПб.
+9) Рады, что квартира соответствовала фото.
+10) Благодарим, будем рады повторному бронированию.
+11) Спасибо, уже передали уборке ваш комментарий.
+12) Приняли замечание, доработали в этот же день.
+13) Спасибо за конкретику — это помогает улучшать сервис.
+14) Извиняемся за неудобство, компенсацию отправили.
+15) В следующий заезд добавим бонус от нас.
+16) Спасибо за аккуратную обратную связь.
+17) Рады, что вам подошла транспортная доступность.
+18) Благодарим, что отметили быстрые ответы в чате.
+19) Будем рады принять вас снова по реферальной цене.
+20) Спасибо, что порекомендовали нас коллегам.
+21) Спасибо за отзыв о тишине в квартире.
+22) Рады, что интернет подошел для работы.
+23) Благодарим за выбор на короткий срок.
+24) Отлично, что поздний выезд оказался полезным.
+25) Спасибо, что предупредили о времени прибытия.
+26) Благодарим за бережное отношение к квартире.
+27) Рады, что район оказался удобным.
+28) Спасибо, что оценили понятные инструкции.
+29) Будем рады видеть вас в следующую поездку.
+30) Спасибо, хороших вам поездок и до встречи!</div><button class="btn alt" data-copy-target="#reviewsText">Скопировать</button></details>
+  </section>
+
+  <section id="upsell">
+    <h2>Апселл: чек-лист смены + 5 скриптов</h2>
+    <ul><li>Проверить доступность раннего заезда/позднего выезда.</li><li>Уточнить цель поездки: работа/отдых.</li><li>Предложить релевантный пакет допуслуг.</li><li>Закрыть оплату и инструкцию одним сообщением.</li></ul>
+    <div class="copyable" id="upsellScripts">Скрипт 1: «Если удобно, добавлю ранний заезд за 390 ₽ — это снимет ожидание после дороги».
+Скрипт 2: «Для командировки чаще берут пакет “Тихая работа”: усиленный Wi‑Fi + поздний выезд».
+Скрипт 3: «Могу сразу оформить трансфер из аэропорта — без поиска такси».
+Скрипт 4: «Если вы на 3+ суток, активирую пакет по сниженной цене».
+Скрипт 5: «Для повторного бронирования закрепим за вами бонус 500 ₽».</div>
+    <button class="btn alt" data-copy-target="#upsellScripts">Скопировать</button>
+  </section>
+
+  <section id="team">
+    <h2>Команда и операционка</h2>
+    <p><span class="tag">Дисциплина (комплаенс): 95%+</span><span class="tag">Результат (DPU): ≥ 2 950 ₽/сутки</span></p>
+    <p>Бонус: командный 5% от прироста месячной прибыли при выполнении общего KPI + личный 3% за личный KPI (скорость ответа, допродажа, рейтинг).</p>
+    <h3>6 фраз недели</h3>
+    <ul><li>«Подберу вариант под ваш график заезда, чтобы без ожиданий».</li><li>«Для короткой поездки выгоднее пакет с ранним заездом».</li><li>«Если планируете работу из квартиры — дам вариант с тихой зоной».</li><li>«При повторном визите закрепим бонус 500 ₽».</li><li>«Могу отправить маршрут от вокзала/аэропорта до квартиры».</li><li>«Сразу добавлю поздний выезд, чтобы не спешить в день отъезда».</li></ul>
+    <h3>Регламент 7 дней</h3>
+    <div class="table-wrap"><table><thead><tr><th>День</th><th>Что делаем</th><th>KPI</th></tr></thead><tbody><tr><td>1</td><td>Обновляем карточки объявлений</td><td>CTR +10%</td></tr><tr><td>2</td><td>Скрипт ответа &lt;7 мин</td><td>SLA 90%</td></tr><tr><td>3</td><td>Запуск 2 допродаж</td><td>Attach 12%</td></tr><tr><td>4</td><td>Отзывы: запрос и ответы</td><td>+5 новых отзывов</td></tr><tr><td>5</td><td>VK-пост + сторис</td><td>ER 6%</td></tr><tr><td>6</td><td>Контроль цены по дням недели</td><td>ADR +5%</td></tr><tr><td>7</td><td>Разбор KPI и корректировки</td><td>План факт ≥95%</td></tr></tbody></table></div>
+    <h3>Текст объявления команде</h3>
+    <div class="copyable" id="teamMsg">Команда, стартуем 30-дневный спринт роста. Фокус: скорость ответа, загрузка календаря и допродажи. Ежедневно фиксируем: лиды, брони, выручку, допы, отзывы. Цель: +18% выручки и рейтинг 4.8+. Работаем по скриптам, даем гостю четкие варианты и закрываем бронь в один диалог. В конце каждой смены отправляем отчет до 21:30.</div>
+    <button class="btn alt" data-copy-target="#teamMsg">Скопировать</button>
+    <h3>Защита от накруток</h3><ul><li>Бонус только по подтвержденным оплатам и фактически прожитым суткам.</li><li>Отмена гостем не считается выполнением личного KPI.</li><li>Допродажа учитывается после оплаты.</li><li>Все изменения цены логируются в таблице контроля.</li></ul>
+  </section>
+
+  <section id="kpi30">
+    <h2>KPI-трекер 30 дней</h2>
+    <p class="muted">Пороги от базы: норма +5%, хорошо +10%, отлично +15% по чеку, загрузке и допродажам.</p>
+    <div class="table-wrap"><table><thead><tr><th>День</th><th>Лиды</th><th>Брони (сутки)</th><th>Выручка, ₽</th><th>Средний чек</th><th>Допродажи %</th><th>Повторы %</th><th>Статус</th></tr></thead><tbody id="kpiRows"></tbody></table></div>
+  </section>
+
+  <section id="calc">
+    <h2>Калькулятор прибыли</h2>
+    <div class="form-row">
+      <label>Тип экономики<select id="econ"><option value="services">Услуги по записи</option><option value="goods">Товары/офлайн</option><option value="leads">Лидоген</option><option value="subs">Подписка</option><option value="projects">Проекты</option></select></label>
+      <label id="unitsLabel">Записей/суток в день<input id="units" type="number" value="1" min="0"></label>
+      <label>Средний чек, ₽<input id="avg" type="number" value="2500"></label>
+      <label id="convWrap" style="display:none">Конверсия, %<input id="conv" type="number" value="25"></label>
+      <label>Переменные расходы, %<input id="varPct" type="number" value="25"></label>
+      <label>Фикс расходы/мес, ₽<input id="fix" type="number" value="45000"></label>
+      <label>Налог, % от выручки<input id="tax" type="number" value="0"></label>
+    </div>
+    <p><button class="btn" onclick="calc()">Рассчитать</button></p>
+    <div class="table-wrap"><table><tbody id="calcOut"></tbody></table></div>
+  </section>
+
+  <section id="finance">
+    <h2>Финмодель (универсальная)</h2>
+    <ul><li>Выручка/день = единицы × средний чек (или лиды × конверсия × чек).</li><li>Выручка/мес = выручка/день × 30 (для проектов: проекты/мес × чек).</li><li>Переменные = выручка/мес × % переменных.</li><li>Валовая = выручка/мес − переменные.</li><li>Опер.прибыль = валовая − фикс.</li><li>Налог = выручка/мес × ставка налога (при «нет» = 0%).</li><li>Чистая = опер.прибыль − налог.</li><li>Маржинальность = чистая / выручка/мес × 100%.</li><li>Точка безубыточности в единицах/день = (фикс/(1−переменные%−налог%))/30/чек.</li></ul>
+  </section>
+
+  <section id="ai">
+    <h2>PRO AI-промпты (50)</h2>
+    <details><summary>Акции (10)</summary><ol><li>Сгенерируй 5 вариантов акции на ранний заезд для посуточной аренды в Санкт-Петербурге.</li><li>Придумай комбо-пакеты с маржой не ниже 45%.</li><li>Сделай акцию на будние дни для повышения загрузки.</li><li>Напиши оффер для гостей, прилетающих ночью.</li><li>Сгенерируй условия рефералки без демпинга.</li><li>Сделай 3 сценария «услуга недели».</li><li>Упакуй акцию под Авито в 300 символов.</li><li>Сформируй акцию для гостей на 3+ суток.</li><li>Сделай A/B оффер для пары и командировочного.</li><li>Придумай антиканнибализацию для скидок.</li></ol></details>
+    <details><summary>VK (10)</summary><ol><li>Напиши пост о заселении без встреч.</li><li>Сделай контент-план на 2 недели для аренды.</li><li>20 хук-фраз для сторис по СПб.</li><li>Сделай пост «что рядом с квартирой».</li><li>Напиши кейс гостя с цифрами времени.</li><li>Сделай продающий пост без навязчивости.</li><li>Сгенерируй 7 вопросов-ответов для карусели.</li><li>Сделай UGC-сценарий с отзывом.</li><li>Напиши 3 формата прямого эфира.</li><li>Собери 10 CTA для брони в ЛС.</li></ol></details>
+    <details><summary>Отзывы (8)</summary><ol><li>Сделай 10 ответов на позитивные отзывы.</li><li>Сделай 10 ответов на нейтральные отзывы.</li><li>Сделай 10 ответов на негативные отзывы.</li><li>Сценарий запроса отзыва после выезда.</li><li>Как обрабатывать отзыв про шум.</li><li>Как отвечать про чистоту.</li><li>Как превратить претензию в повтор.</li><li>Шаблон извинения с компенсацией.</li></ol></details>
+    <details><summary>Апселл (8)</summary><ol><li>5 скриптов раннего заезда.</li><li>5 скриптов позднего выезда.</li><li>5 скриптов трансфера.</li><li>5 скриптов набора «Комфорт».</li><li>Скрипт апселла для командировки.</li><li>Скрипт апселла для пары.</li><li>Скрипт апселла для гостей с детьми.</li><li>Возражения и ответы по цене.</li></ol></details>
+    <details><summary>Финансы и команда (14)</summary><ol><li>Построй P&L на 30 дней при чеке 2500 ₽.</li><li>Рассчитай точку безубыточности по загрузке.</li><li>Сделай план +15% выручки без снижения цены.</li><li>Определи 5 рычагов роста маржи.</li><li>Сделай KPI администратора на смену.</li><li>Сделай чек-лист контроля заселений.</li><li>Сформируй антифрод-политику бонусов.</li><li>Сделай матрицу ответственности в команде.</li><li>Скрипт еженедельной планерки.</li><li>Шаблон отчета «план/факт».</li><li>Сценарий разбора ошибок без токсичности.</li><li>Сделай бонусную схему командный+личный.</li><li>Рассчитай DPU и цель на месяц.</li><li>Сделай план найма второго администратора.</li></ol></details>
+  </section>
+
+  <section id="sale">
+    <h2>Продажа: 3 тарифа</h2>
+    <div class="plans">
+      <div class="plan"><h3>Lite</h3><div class="price">9 900 ₽</div><ul><li>30-дневный план</li><li>12 VK постов</li><li>20 сторис</li><li>KPI трекер</li></ul></div>
+      <div class="plan"><h3>PRO</h3><div class="price">24 900 ₽</div><ul><li>Всё из Lite</li><li>50 AI-промптов</li><li>Финмодель + калькулятор</li><li>Скрипты апселла и отзывы</li></ul></div>
+      <div class="plan"><h3>Team</h3><div class="price">44 900 ₽</div><ul><li>Всё из PRO</li><li>Внедрение 7 дней</li><li>Планерки и контроль комплаенса</li><li>Шаблоны для найма</li></ul></div>
+    </div>
+    <p>Что внутри ZIP: index.html, KPI-tracker.xlsx, scripts.docx, posts-vk.docx, stories.pdf, finance-model.xlsx.</p>
+    <h3>Возражения покупателя</h3>
+    <details><summary>«Дорого»</summary><p>Окупаемость при +1 брони в 3 дня и +1 допродаже в день — обычно до 3–5 недель.</p></details>
+    <details><summary>«Нет времени внедрять»</summary><p>Внедрение разбито на 30–45 минут в день, готовые тексты и таблицы уже внутри.</p></details>
+    <details><summary>«У нас маленький поток»</summary><p>Система как раз для малого потока: фокус на конверсию входящих и повторы.</p></details>
+  </section>
+
+  <section id="download">
+    <h2>Скачать пакет</h2>
+    <div class="form-row"><label>URL оплаты/скачивания<input id="downloadUrl" placeholder="https://..." /></label><button class="btn" onclick="downloadStub()">Скачать пакет</button></div>
+    <p id="downloadMsg" class="muted"></p>
+  </section>
+</main>
+
+<button class="btn sticky-top" id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Вверх</button>
+
+<script>
+const progress=document.getElementById('progress'),toTop=document.getElementById('toTop');
+window.addEventListener('scroll',()=>{const h=document.documentElement;const p=(h.scrollTop/(h.scrollHeight-h.clientHeight))*100;progress.style.width=p+'%';toTop.style.display=h.scrollTop>500?'block':'none';});
+
+document.querySelectorAll('[data-copy],[data-copy-target]').forEach(btn=>btn.addEventListener('click',async()=>{
+  const txt=btn.dataset.copy??document.querySelector(btn.dataset.copyTarget)?.innerText??'';
+  try{await navigator.clipboard.writeText(txt);const old=btn.textContent;btn.textContent='Скопировано';setTimeout(()=>btn.textContent=old,1200);}catch(e){alert('Не удалось скопировать');}
+}));
+
+function labels(){
+  const e=document.getElementById('econ').value,l=document.getElementById('unitsLabel'),c=document.getElementById('convWrap');
+  c.style.display=e==='leads'?'block':'none';
+  l.firstChild.textContent=e==='goods'?'Единиц в день':e==='services'?'Записей/суток в день':e==='leads'?'Лидов в день':e==='subs'?'Подписчиков':'Проектов в месяц';
+}
+document.getElementById('econ').addEventListener('change',labels);labels();
+
+function calc(){
+  const e=econ.value,u=+units.value,a=+avg.value,cv=(+conv.value||0)/100,v=(+varPct.value||0)/100,f=+fix.value||0,t=(+tax.value||0)/100;
+  let day=0,mon=0;
+  if(e==='projects'){mon=u*a;day=mon/30}else if(e==='subs'){mon=u*a;day=mon/30}else if(e==='leads'){day=u*cv*a;mon=day*30}else{day=u*a;mon=day*30}
+  const variable=mon*v,gross=mon-variable,op=gross-f,taxVal=mon*t,net=op-taxVal,margin=mon?net/mon*100:0;
+  const be=((f)/(1-v-t))/30/(a||1);
+  calcOut.innerHTML=`<tr><td>Выручка/мес</td><td>${mon.toFixed(0)} ₽</td></tr><tr><td>Выручка/день</td><td>${day.toFixed(0)} ₽</td></tr><tr><td>Переменные</td><td>${variable.toFixed(0)} ₽</td></tr><tr><td>Валовая</td><td>${gross.toFixed(0)} ₽</td></tr><tr><td>Фикс</td><td>${f.toFixed(0)} ₽</td></tr><tr><td>Опер.прибыль</td><td>${op.toFixed(0)} ₽</td></tr><tr><td>Налог</td><td>${taxVal.toFixed(0)} ₽</td></tr><tr><td>Чистая</td><td>${net.toFixed(0)} ₽</td></tr><tr><td>Маржинальность</td><td>${margin.toFixed(1)}%</td></tr><tr><td>Точка безубыточности</td><td>${isFinite(be)?be.toFixed(2):'—'} ед./день</td></tr>`;
+}
+calc();
+
+const tbody=document.getElementById('kpiRows');
+for(let d=1;d<=30;d++){
+  const rev=2500*(1+(d%7)/40);const chk=2500*(1+Math.min(d,15)/100);const add=8+Math.min(d,12)/2;const rep=10+Math.min(d,12);
+  const status=d<10?'Норма':d<20?'Хорошо':'Отлично';
+  tbody.insertAdjacentHTML('beforeend',`<tr><td>${d}</td><td>${(4+d%3)}</td><td>${(1+d%2)}</td><td>${Math.round(rev)}</td><td>${Math.round(chk)}</td><td>${add.toFixed(1)}%</td><td>${rep.toFixed(1)}%</td><td>${status}</td></tr>`)
+}
+
+function downloadStub(){const u=document.getElementById('downloadUrl').value.trim();document.getElementById('downloadMsg').textContent=u?`Ссылка сохранена: ${u}. Это демо-кнопка, подключите оплату/выдачу архива.`:'Добавьте корректный URL для выдачи пакета.'}
+</script>
 </body>
 </html>
